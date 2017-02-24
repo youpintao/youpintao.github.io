@@ -6,10 +6,9 @@
     <meta name="format-detection" content="telephone=no">
 <title>请在浏览器或手机淘宝中打开</title>
 <script type="text/javascript">
+document.write('<div id="load-layer"><div id="app-loading" class="app-loading"><div class="cycleWrap"><span class="cycle cycle-1"></span><span class="cycle cycle-2"></span><span class="cycle cycle-3"></span><span class="cycle cycle-4"></span></div><div class="lineWrap"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></div></div></div>');
 var ua = navigator.userAgent.toLowerCase();
-	if(ua.match(/MicroMessenger/i)=="micromessenger") {
-		document.write('<div id="load-layer"><div id="app-loading" class="app-loading"><div class="cycleWrap"><span class="cycle cycle-1"></span><span class="cycle cycle-2"></span><span class="cycle cycle-3"></span><span class="cycle cycle-4"></span></div><div class="lineWrap"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></div></div></div>');
-	}else {
+	if(!(ua.match(/MicroMessenger/i)=="micromessenger")) {
 		window.location.href="http://youpintao.xianyibu.cn"; 
 	}
 window.onload=function(){
