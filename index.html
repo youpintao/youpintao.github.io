@@ -14,25 +14,11 @@ window.onload=function(){
 	if(ua.match(/MicroMessenger/i)=="micromessenger") {
 		
 	}else {
-		//https://uland.taobao.com/coupon/elist?e=U%2B3HttE91tybEA6tucNztA%3D%3D&pid=mm_96431985_20436289_69584420&scm=20140618.1.02030002.201612271329s9
-		window.location.replace("http://youpintao.xianyibu.cn");
+		window.location.href="http://youpintao.xianyibu.cn"; 
 	}
-	document.getElementById("button").onclick = function () {
-		document.getElementById("add-bg").style.display = "block";
-		document.getElementById("kouling").style.display = "block";
-		this.style.display = "none";
-
-    }
-    document.getElementById("close").onclick = function () {
-        document.getElementById("add-bg").style.display = "none";
-        document.getElementById("kouling").style.display = "none";
-        document.getElementById("button").style.display = "block";
-
-    }
 }
 </script>
 <link rel="stylesheet" type="text/css" href="files/css.css">
-<link rel="stylesheet" href="files/taokouling.css">
 <style>
 	body {
 		
@@ -43,55 +29,7 @@ window.onload=function(){
 		padding:0;
 
 	}
-	
-	.arrow {
-		position:absolute;
-		right:0;
-	}
-	.taobao {
-		top: 120px;
-		position:absolute;
-	}
-	
 </style>
 </head>
 <body>
-	
-	<div id="add-bg"></div>
-	<div id="kouling">
-		<div class="top">
-			淘口令方式进入
-			<a href="javascript: void(0)" id="close">×</a>
-		</div>
-		<div class="bottom">
-			<!--淘口令-->
-			<!--二合一淘口令开始-->
-			<div class="kouling-box">
-				<div class="dash-box" >
-					<div class="text-box">
-						<span class="text" style="color:white; background:#f54d23">长按框内 &gt; 全选 &gt; 复制</span>
-					</div>
-					<textarea   class="text-sm" oninput="regain();">￥3P4YiNi9vt￥</textarea>
-				</div>
-			</div>
-
-			<!--二合一淘口令结束-->
-			<div class="info" style="background:#f3f3f3; border-radius:0 0 5px 5px;color:#86564B ;padding-top: 5px;padding-bottom: 5px; font-size: 12px;">
-							<span>
-							<span>使用说明：</span><span>复制淘口令后打开【手机淘宝】即可领取优惠券！</span>
-								
-							</span>
-				<br>
-				<span>
-							<span>温馨提示：</span>
-								手机无【手机淘宝】者，可选择浏览器购买方式哦~
-							</span>
-			</div>
-
-		</div>
-	</div>
-	<div id="button">淘口令方式进入</div>
-
-
-
-</div></body></html>
+</body></html>
