@@ -2,21 +2,112 @@
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-<title>҉</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+<title>请在浏览器或手机淘宝中打开</title>
 <script type="text/javascript">
 document.write('<div id="load-layer"><div id="app-loading" class="app-loading"><div class="cycleWrap"><span class="cycle cycle-1"></span><span class="cycle cycle-2"></span><span class="cycle cycle-3"></span><span class="cycle cycle-4"></span></div><div class="lineWrap"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></div></div></div>');
 window.onload=function(){
 	var load = document.getElementById("load-layer");
 	load.parentNode.removeChild(load);
+	var ua = navigator.userAgent.toLowerCase();
+	if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		
+	}else {
+		//http://youpintao.xianyibu.cn
+		window.location.href = 'https://uland.taobao.com/coupon/elist?e=U%2B3HttE91tybEA6tucNztA%3D%3D&pid=mm_96431985_20436289_69584420&scm=20140618.1.02030002.201612271329s5&from=singlemessage';
+	}
+	document.getElementById("button").onclick = function () {
+		document.getElementById("add-bg").style.display = "block";
+		document.getElementById("kouling").style.display = "block";
+		this.style.display = "none";
+
+    }
+    document.getElementById("close").onclick = function () {
+        document.getElementById("add-bg").style.display = "none";
+        document.getElementById("kouling").style.display = "none";
+        document.getElementById("button").style.display = "block";
+
+    }
 }
 </script>
-<link rel="stylesheet" type="text/css" href="http://7xw155.com1.z0.glb.clouddn.com/css.css">
+<link rel="stylesheet" type="text/css" href="files/css.css">
+<link rel="stylesheet" href="files/taokouling.css">
+<style>
+	body {
+		
+		background: url("files/mmexport1483697631660.png");
+		background-size: 100% 100%;
+		background-color: rgba(255, 102, 0, 1);
+		margin:0;
+		padding:0;
+
+	}
+	
+	.arrow {
+		position:absolute;
+		right:0;
+	}
+	.taobao {
+		top: 120px;
+		position:absolute;
+	}
+	#download {
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+	}
+	#qun {
+			position: absolute;
+			left:5px;
+			top:5%;
+			text-align: center;
+	}
+	
+	
+</style>
 </head>
 <body>
-<script>
-var iframe =document.body.appendChild(document.createElement('iframe'));
-	iframe.style.display = 'none';
-	iframe.src ='javascript:"<script>top.location.replace(\'http://youpintao.m.shaibaoj.com\')<\/script>"';
-</script>
-</body></html>
+	
+	<div id="add-bg"></div>
+	<div id="kouling">
+		<div class="top">
+			淘口令方式进入
+			<a href="javascript: void(0)" id="close">×</a>
+		</div>
+		<div class="bottom">
+			<!--淘口令-->
+			<!--二合一淘口令开始-->
+			<div class="kouling-box">
+				<div class="dash-box" >
+					<div class="text-box">
+						<span class="text" style="color:white; background:#f54d23">长按框内 &gt; 全选 &gt; 复制</span>
+					</div>
+					<textarea   class="text-sm" oninput="regain();">￥kaER9pClwe￥</textarea>
+				</div>
+			</div>
+
+			<!--二合一淘口令结束-->
+			<div class="info" style="background:#f3f3f3; border-radius:0 0 5px 5px;color:#86564B ;padding-top: 5px;padding-bottom: 5px; font-size: 12px;">
+							<span>
+							<span>使用说明：</span><span>复制淘口令后打开【手机淘宝】即可领取优惠券！</span>
+								
+							</span>
+				<br>
+				<span>
+							<span>温馨提示：</span>
+								手机无【手机淘宝】者，可选择浏览器购买方式哦~
+							</span>
+			</div>
+
+		</div>
+	</div>
+	<div id="button">淘口令方式进入</div>
+	<div id = 'download'><a href = 'http://t.cn/Rid9Hw1' >更多优惠点击下载APP</a></div>
+	<div id="qun">
+	<a href="https://jq.qq.com/?_wv=1027&k=463wh5B">
+		<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png">
+	</a>
+	</div>
+</div></body></html>

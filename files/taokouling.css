@@ -1,0 +1,92 @@
+
+/*黑色背景*/
+#add-bg {
+    width:100%;
+    height:120%;
+    background-color: #000;
+    position: relative;
+    opacity:0.7;
+    display: none;
+}
+/*口令显示框*/
+#kouling {
+    display: none;
+    width:95%;
+    height: 206px;
+    border-radius: 5px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+#kouling > .top {
+    width:100%;
+    height: 45px;
+    line-height:45px;
+    background-color: #f54d23;
+    border-radius:5px 5px 0 0;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+}
+#kouling > .top > #close {
+    font-size: 36px;
+    position:absolute;
+    top: -4px;
+    right: 8px;
+    color: white;
+    font-weight: 100;
+    opacity: 1;
+}
+/*淘口令方框的底部*/
+
+#kouling > .bottom {
+    width:100%;
+}
+#kouling > .bottom > .kouling-box {
+    width:100%;
+    background-color: #fff;
+    padding:19px 0;
+}
+.bottom > .kouling-box > .dash-box {
+    width:70%;
+    margin:0 auto;
+
+    border: .1rem #f54d23 dashed;
+    text-align: center;
+	border-radius:25px;
+	height:50px;
+}
+.kouling-box > .dash-box > .text-box {
+    margin-top: -10px;
+    padding: 0 10px;
+}
+.text-sm {
+    width: 90%;
+    border:none;
+    text-align: center!important;
+    color: #555;
+    margin-top: 10px;
+}
+/*淘口令按钮*/
+#button {
+    background-color: #fff;
+    font-size: 14px;
+    height:30px;
+    line-height: 30px;
+    width:140px;
+    text-align: center;
+    border-radius: 5px;
+    color: #f9b537;
+    position: absolute;
+    left:50%;
+    margin-left:-70px;
+    bottom:25px;
+    box-shadow: 0 0 10px #fff;
+    cursor: pointer;
+}
